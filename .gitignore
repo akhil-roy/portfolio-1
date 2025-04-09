@@ -1,4 +1,4 @@
 node_modules
 *.json
 *.config.js
-./src/input.css
+/src/input.css
