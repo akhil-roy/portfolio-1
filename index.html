@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <title>Porfolio</title>
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-slate-100">
     
     <div id="header" class="fixed top-0 left-0 px-5 py-4 w-full md:py-5 lg:py-10 bg-black z-[9999]">
         <div class="flex items-center justify-between w-full px-10 md:px-14 lg:px-20">
@@ -22,7 +22,7 @@
     <!-- Back-To-Top Button -->
     <button onclick="topFunction()" id="backToTop" class="btn-pop" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 
-    <div id="hero" class="w-full h-fit lg:h-[100vh] relative bg-gradient-to-b from-slate-800 via-blue-900 to-slate-800 flex flex-col-reverse md:flex-row items-center justify-center sm:px-10 sm:gap-10 md:gap-12 lg:gap-40 pt-20 md:pt-24 pb-12 md:pb-16">
+    <div id="hero" class="w-full h-fit lg:h-[100vh] relative bg-gradient-to-b from-blue-500 to-blue-950 flex flex-col-reverse md:flex-row items-center justify-center sm:px-10 sm:gap-10 md:gap-12 lg:gap-40 pt-20 md:pt-24 pb-12 md:pb-16">
         <div class="text-left text-slate-100 max-w-sm md:max-w-md lg:max-w-lg h-1/2 flex flex-col gap-2 py-5 z-10">
             <p class="text-md font-sub-head">Hello</p>
             <p class="text-2xl md:text-3xl lg:text-5xl font-bold font-head">I'm Akhil Roy </p>
@@ -38,12 +38,12 @@
                 <img src="./images/pro-pic-5.png" class="max-w-[350px] md:max-w-[380px] lg:max-w-[500px]  ml-3" alt="">
             </div>
         </div>
-        <div class="absolute w-32 md:w-40 h-32 md:h-40 bg-blue-300 top-[45%] right-0  rounded-full blur-xl opacity-30 "></div>
-        <div class="absolute w-48 md:w-52 h-48 md:h-52 bg-purple-500 top-[35%] left-[15%] transform -translate-x-1/2 -translate-y-1/2 rounded-full blur-xl opacity-30 "></div>
-        <div class="absolute w-64 md:w-72 h-64 md:h-72 bg-violet-800 top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full blur-xl opacity-30 "></div>
+        <div class="absolute w-32 md:w-40 h-32 md:h-40 bg-violet-300 top-[45%] right-0  rounded-full blur-xl opacity-30 animate-beating "></div>
+        <div class="absolute w-48 md:w-52 h-48 md:h-52 bg-purple-950 top-[35%] left-[15%] transform -translate-x-1/2 -translate-y-1/2 rounded-full blur-xl opacity-30 animate-beating "></div>
+        <div class="absolute w-64 md:w-72 h-64 md:h-72 bg-violet-800 top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full blur-xl opacity-30 animate-beating delay-700"></div>
         
         <!-- infinite Slider -->
-        <div class="w-full absolute bottom-0 left-0 flex items-center justify-center overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_75px,_black_calc(100%-100px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+        <div class="w-full absolute bottom-0 left-0 flex items-center justify-center overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_75px,_black_calc(100%-100px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_200px,_black_calc(100%-275px),transparent_100%)]">
           <div class="w-full flex items-center gap-5 py-5  animate-autoSlide" >
             <img src="./images/python.png" class="w-10 lg:w-12 h-10 lg:h-12  mx-3 md:mx-5 lg:mx-7" alt="">
             <img src="./images/django.png" class="w-10 lg:w-12 h-10 lg:h-12  mx-3 md:mx-5 lg:mx-7" alt="">
@@ -97,25 +97,25 @@
     </div> -->
 
     <div class="w-full p-20 flex flex-col items-center justify-center">
-      <h1 class="text-2xl md:text-4xl font-bold py-3 font-head">Capabilities</h1>
+      <h1 class="text-2xl md:text-4xl font-bold py-5 font-head">Capabilities</h1>
       <div class="flex flex-wrap items-center justify-around gap-5">
-        <div class="max-w-xs p-2 text-center rounded-xl flex flex-col px-3 py-4 btn-pop-2 hover:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-slate-100">
-            <img src="./images/developer.png" class="w-20 h-20 self-center" alt="">
+        <div class="max-w-xs p-2 text-center group rounded-xl flex flex-col px-3 py-4 btn-pop-2 hover:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-slate-100">
+            <img src="./images/developer.png" class="w-20 h-20 px-2 self-center group-hover:transform group-hover:-translate-y-8 group-hover:bg-slate-100 group-hover:btn-pop-2 group-hover:rounded-3xl transition-transform duration-300 ease-in-out" alt="">
             <h3 class="text-xl md:text-2xl font-semibold md:font-bold font-sub-head">Website Development</h3>
             <p class="text-sm md:text-md lg:text-lg font-normal md:font-medium font-body">Crafting visually stunning and user-friendly websites tailored to your brand's identity and goals, ensuring seamless functionality across all devices.</p>
         </div>
-        <div class="max-w-xs p-2 text-center rounded-xl flex flex-col px-3 py-4 btn-pop-2 hover:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-slate-100">
-            <img src="./images/wordpress.png" class="w-20 h-20 self-center" alt="">
+        <div class="max-w-xs p-2 text-center group rounded-xl flex flex-col px-3 py-4 btn-pop-2 hover:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-slate-100">
+            <img src="./images/wordpress.png" class="w-20 h-20 self-center group-hover:transform group-hover:-translate-y-8 group-hover:bg-slate-100 group-hover:btn-pop-2 group-hover:rounded-3xl transition-transform duration-300 ease-in-out" alt="">
             <h3 class="text-xl md:text-2xl font-semibold md:font-bold font-sub-head">Wordpress Development</h3>
             <p class="text-sm md:text-md lg:text-lg font-normal md:font-medium font-body">Building custom WordPress solutions that are fully optimized, scalable, and easy to manage, empowering you to take control of your website effortlessly.</p>
         </div>
-        <div class="max-w-xs p-2 text-center rounded-xl flex flex-col px-3 py-4 btn-pop-2 hover:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-slate-100">
-            <img src="./images/research.png" class="w-20 h-20 self-center" alt="">
+        <div class="max-w-xs p-2 text-center group rounded-xl flex flex-col px-3 py-4 btn-pop-2 hover:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-slate-100">
+            <img src="./images/research.png" class="w-20 h-20 self-center group-hover:transform group-hover:-translate-y-8 group-hover:bg-slate-100 group-hover:btn-pop-2 group-hover:rounded-3xl transition-transform duration-300 ease-in-out" alt="">
             <h3 class="text-xl md:text-2xl font-semibold md:font-bold font-sub-head">Web Research</h3>
             <p class="text-sm md:text-md lg:text-lg font-normal md:font-medium font-body">Conducting thorough web research to uncover actionable insights and trends, empowering your business with data-driven strategies.</p>
         </div>
-        <div class="max-w-xs p-2 text-center rounded-xl flex flex-col px-3 py-4 btn-pop-2 hover:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-slate-100">
-            <img src="./images/seo.png" class="w-20 h-20 self-center" alt="">
+        <div class="max-w-xs p-2 text-center group rounded-xl flex flex-col px-3 py-4 btn-pop-2 hover:bg-gradient-to-l from-blue-500 to-blue-800 hover:text-slate-100">
+            <img src="./images/seo.png" class="w-20 h-20 self-center group-hover:transform group-hover:-translate-y-8 group-hover:bg-slate-100 group-hover:btn-pop-2 group-hover:rounded-3xl transition-transform duration-300 ease-in-out" alt="">
             <h3 class="text-xl md:text-2xl font-semibold md:font-bold font-sub-head">SEO Optimization</h3>
             <p class="text-sm md:text-md lg:text-lg font-normal md:font-medium font-body">Enhancing your online presence with result-oriented SEO strategies that drive traffic, boost rankings, and connect you with your target audience.</p>
         </div>
@@ -281,32 +281,31 @@
         <p class="text-md md:text-lg font-medium font-sub-head text-center text-slate-300 pb-3"> What past clients has to say </p>
         <div class="splide py-20" role="group">
             <div class="splide__track">
-                  <ul class="splide__list">
-                      <li class="splide__slide">
-                        <div class="max-w-sm md:max-w-lg  px-3 mx-auto">
-                            <div
-                              class="relative overflow-hidden btn-pop bg-gradient-to-r from-blue-500 to-blue-800 rounded-xl shadow-2xl p-8 text-white">
-                              <div class="absolute top-0 left-0 w-full h-full bg-white opacity-10 transform -skew-x-12"></div>
-                              <div class="relative z-10">
-                                <svg class="w-12 h-12 mb-4 text-blue-900" fill="currentColor" viewBox="0 0 24 24">
-                                  <path
-                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                                </svg>
-                                <p class="text-lg font-medium font-body mb-4">
-                                  "This product exceeded all my expectations. It's intuitive, powerful, and has dramatically improved my workflow.
-                                  I can't imagine working without it now!"</p>
-                                <div class="flex items-center">
-                                  <img src="https://randomuser.me/api/portraits/women/91.jpg" alt="Avatar" class="w-12 h-12 rounded-full mr-4 border-2 border-purple-300">
-                                  <div>
-                                    <h4 class="font-semibold font-head">Sarah Johnson</h4>
-                                    <p class="text-slate-700 font-sub-head">UX Designer</p>
-                                </div>
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="max-w-sm md:max-w-lg  px-3 mx-auto">
+                          <div
+                            class="relative overflow-hidden btn-pop bg-gradient-to-r from-blue-500 to-blue-800 rounded-xl shadow-2xl p-8 text-white">
+                            <div class="absolute top-0 left-0 w-full h-full bg-white opacity-10 transform -skew-x-12"></div>
+                            <div class="relative z-10">
+                              <svg class="w-12 h-12 mb-4 text-blue-900" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                  d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                              </svg>
+                              <p class="text-lg font-medium font-body mb-4">
+                                Working with Akhil was a great experience! His expertise in web and market research added real value to our project, perfectly complementing my work as a UI/UX and graphic designer. His insights helped us achieve better results, and their professionalism and collaborative approach made the process seamless. I look forward to teaming up again</p>
+                              <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/women/91.jpg" alt="Avatar" class="w-12 h-12 rounded-full mr-4 border-2 border-purple-300">
+                                <div>
+                                  <h4 class="font-semibold font-head">Emal Varghese</h4>
+                                  <p class="text-slate-700 font-sub-head">Graphic Designer</p>
                                 </div>
                               </div>
                             </div>
-                        </div>
-                      </li>
-                      <li class="splide__slide">
+                          </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
                         <div class="max-w-sm md:max-w-lg  px-3 mx-auto">
                             <div
                               class="relative overflow-hidden btn-pop bg-gradient-to-r from-blue-500 to-blue-800 rounded-xl shadow-2xl p-8 text-white">
@@ -328,8 +327,8 @@
                               </div>
                             </div>
                         </div>
-                      </li>
-                      <li class="splide__slide">
+                    </li>
+                    <li class="splide__slide">
                         <div class="max-w-sm md:max-w-lg  px-3 mx-auto">
                             <div
                               class="relative overflow-hidden btn-pop bg-gradient-to-r from-blue-500 to-blue-800 rounded-xl shadow-2xl p-8 text-white">
@@ -351,8 +350,8 @@
                               </div>
                             </div>
                         </div>
-                      </li>
-                      <li class="splide__slide">
+                    </li>
+                    <li class="splide__slide">
                         <div class="max-w-sm md:max-w-lg  px-3 mx-auto">
                             <div
                               class="relative overflow-hidden btn-pop bg-gradient-to-r from-blue-500 to-blue-800 rounded-xl shadow-2xl p-8 text-white">
@@ -374,8 +373,8 @@
                               </div>
                             </div>
                         </div>
-                      </li>
-                      <li class="splide__slide">
+                    </li>
+                    <li class="splide__slide">
                         <div class="max-w-sm md:max-w-lg  px-3 mx-auto">
                             <div
                               class="relative overflow-hidden btn-pop bg-gradient-to-r from-blue-500 to-blue-800 rounded-xl shadow-2xl p-8 text-white">
@@ -386,20 +385,42 @@
                                     d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                                 </svg>
                                 <p class="text-lg font-medium font-body mb-4">
-                                  "This product exceeded all my expectations. It's intuitive, powerful, and has dramatically improved my workflow.
-                                  I can't imagine working without it now!"</p>
+                                  We're really happy with the new School Website- it's user friendly, visually appealing and it's a great improvement compared to our old website.The layout is clean and crisp, intuitive and creative. Thank you for your hardwork and commitment to making our site professional and special mention to the details and the prompt support you have provided.</p>
                                 <div class="flex items-center">
-                                  <img src="https://randomuser.me/api/portraits/women/91.jpg" alt="Avatar" class="w-12 h-12 rounded-full mr-4 border-2 border-purple-300">
+                                  <img src="./images/dupemss.png" alt="Avatar" class="w-12 h-12 rounded-full mr-4 border-2 object-contain border-blue-900">
                                   <div>
-                                    <h4 class="font-semibold font-head">Sarah Johnson</h4>
-                                    <p class="text-slate-700 font-sub-head">UX Designer</p>
+                                    <h4 class="font-semibold font-head">GFDUPEMSS</h4>
+                                    <p class="text-slate-700 font-sub-head">CBSE School, Maharashtra</p>
                                   </div>
                                 </div>
                               </div>
                             </div>
                         </div>
-                      </li>
-                  </ul>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="max-w-sm md:max-w-lg  px-3 mx-auto">
+                            <div
+                              class="relative overflow-hidden btn-pop bg-gradient-to-r from-blue-500 to-blue-800 rounded-xl shadow-2xl p-8 text-white">
+                              <div class="absolute top-0 left-0 w-full h-full bg-white opacity-10 transform -skew-x-12"></div>
+                              <div class="relative z-10">
+                                <svg class="w-12 h-12 mb-4 text-blue-900" fill="currentColor" viewBox="0 0 24 24">
+                                  <path
+                                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p class="text-lg font-medium font-body mb-4">
+                                  The WordPress website exceeded my expectations! It was perfectly tailored to my needs, with a design that’s both visually appealing and professional. The site runs incredibly fast, which makes a huge difference. The developer’s clear communication and attention to detail made the whole process smooth and stress-free. I’m really happy with the results and would highly recommend their work!</p>
+                                <div class="flex items-center">
+                                  <img src="./images/oaspices.png" alt="Avatar" class="w-12 h-12 rounded-full mr-4 border-2 object-contain border-blue-900">
+                                  <div>
+                                    <h4 class="font-semibold font-head">O A Spices</h4>
+                                    <p class="text-slate-700 font-sub-head">Spices Company, Kerala</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
           </div>
     </div>
@@ -459,6 +480,8 @@
             perPage: 3,
             perMove: 1,
             autoplay:true,
+            interval:3000,
+            pauseOnHover:true,
             breakpoints:{
                 1240:{
                     perPage:1
